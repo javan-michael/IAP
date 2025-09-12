@@ -1,6 +1,6 @@
 <?php
 
-global $conn;
+
 require_once 'plugins/database.php';
 ?>
     <!DOCTYPE html>
