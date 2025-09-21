@@ -1,7 +1,5 @@
 <?php
 
-//Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -10,7 +8,7 @@ use PHPMailer\PHPMailer\Exception;
 class SendMail {
     public function Send_Mail($conf, $mailCnt) {
         //Load Composer's autoloader (created by composer, not included with PHPMailer)
-        require 'Plugins/PHPMailer/vendor/autoload.php';
+        require 'vendor/autoload.php';
         //Create an instance; passing `true` enables exceptions
         $mail = new PHPMailer(true);
 
